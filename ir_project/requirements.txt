@@ -1,0 +1,8 @@
+
+fastapi
+uvicorn
+pymongo
+sentence-transformers
+joblib
+numpy
+scipy

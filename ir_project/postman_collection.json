@@ -1,0 +1,28 @@
+{
+    "info": {
+        "name": "IR Search API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Search",
+            "request": {
+                "method": "POST",
+                "header": [
+                    { "key": "Content-Type", "value": "application/json" }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"query\": \"who is saddam hussein?\",\n    \"dataset\": \"antique\",\n    \"method\": \"bert\",\n    \"top_k\": 5\n}"
+                },
+                "url": {
+                    "raw": "http://127.0.0.1:8000/search",
+                    "protocol": "http",
+                    "host": ["127.0.0.1"],
+                    "port": "8000",
+                    "path": ["search"]
+                }
+            }
+        }
+    ]
+}
